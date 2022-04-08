@@ -58,6 +58,7 @@ header h1 {
 #about img {
     width: 30vw;
     height: auto;
+    margin-bottom: 20px;
 }
 
 #portfolio img {
@@ -72,19 +73,19 @@ header h1 {
     grid-template-columns: 1fr 1fr;
 }
 
+#portfolio div {
+    /*background-color: #BAE498;*/
+    padding: 0 0 0 10vw;
+}
+
 h2 {
-    padding-top: 5vh;
+    padding-top: 2vh;
     grid-column: 1 / 3;
     justify-self: center;
 }
 
 #about img {
     /*background-color: #a2b7f9;*/
-    padding: 0 0 0 10vw;
-}
-
-#portfolio div {
-    /*background-color: dimgray;*/
     padding: 0 0 0 10vw;
 }
 
@@ -116,4 +117,36 @@ a:hover {
 a:active {
     background: #ce9797;
     color: #CDFEAA;
+}
+
+.window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border: none;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.project {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 1.5s;
+}
+
+.close {
+    width: 60px;
+}
+
+@keyframes animatetop {
+    from {top:-300px;opacity:0}
+    to {top:0;opacity:1}
 }

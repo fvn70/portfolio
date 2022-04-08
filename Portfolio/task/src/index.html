@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="code.js"></script>
 </head>
 <body>
     <nav>
@@ -25,11 +26,11 @@
         <h2>Portfolio</h2>
         <div>
             <img src="images/project1.png">
-            <p>Flashcards</p>
+            <p><button class="open-window" id="oBtn1" type="button">Flashcards</button></p>
         </div>
         <div>
             <img src="images/project2.png">
-            <p>Virtual Piano</p>
+            <p><button class="open-window"  id="oBtn2" type="button">Virtual Piano</button></p>
         </div>
     </section>
     <section id="contacts">
@@ -44,5 +45,22 @@
         </div>
     </section>
     <footer>John Doe, 2022</footer>
+    <div class="window" id="modal1">
+        <div class="project" id="pr1">
+            <h1>Flashcards</h1>
+            <p>You can see the project at the following link: <a href="https://github.com/fvn70/flashcards-js">flashcards</a></p>
+            <p>If you are a beginner web developer, you need to know the basics of CSS and HTML. This project is great for those who need somewhere to start. Your goal is to create a stylized page with flashcards, each containing a question on one side and the answer on the other. You can choose any subject you want for your flashcards!</p>
+            <button class="close" id="cBtn1" type="button">Close</button>
+        </div>
+    </div>
+    <div class="window" id="modal2">
+        <div class="project" id="pr2">
+            <h1>Virtual Piano</h1>
+            <p>You can see the project at the following link: <a href="https://github.com/fvn70/flashcards-js">flashcards</a></p>
+            <p>If you are a beginner web developer, you need to know the basics of CSS and HTML. This project is great for those who need somewhere to start. Your goal is to create a stylized page with flashcards, each containing a question on one side and the answer on the other. You can choose any subject you want for your flashcards!</p>
+            <button class="close" id="cBtn2" type="button">Close</button>
+        </div>
+    </div>
+
 </body>
 </html>
